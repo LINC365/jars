@@ -1,4 +1,4 @@
-package com.lkl.linc.ecboleexcapp;
+package com.lkl.linc.app1;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -16,7 +16,6 @@ import java.io.OutputStreamWriter;
 
 /**
  * 公共存储工具，
- * 实质上与com.hunuo.common.utils.ShareUtil有冲突，但该工具类的性能比ShareUtil好
  * created by lkl
  * 2019年8月9日11:50:20
  */
@@ -33,7 +32,7 @@ public class CacheUtil {
     private static SharedPreferences.Editor edt;
 
     private CacheUtil() {
-        sp = MyApplication.getInstance().getApplicationContext().getSharedPreferences("ecblapp1", Context.MODE_PRIVATE);
+        sp = MyApplication.getInstance().getApplicationContext().getSharedPreferences("mylklapp1", Context.MODE_PRIVATE);
     }
 
     private SharedPreferences.Editor getEditor() {
